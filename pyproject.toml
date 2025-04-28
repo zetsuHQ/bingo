@@ -1,0 +1,12 @@
+[project]
+name = "bingo"
+version = "0.1.0"
+dependencies = [
+    "flask",
+    "requests",
+    "pyyaml",
+    "netifaces"
+]
+
+[project.scripts]
+bingo = "bingo:main"

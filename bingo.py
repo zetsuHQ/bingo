@@ -62,7 +62,7 @@ def dir_listing(req_path):
         return send_file(abs_path)
     return ''
 
-if __name__ == '__main__':
+def main():
     cli = sys.modules['flask.cli']
     cli.show_server_banner = lambda *x: None
     try:
@@ -77,3 +77,6 @@ if __name__ == '__main__':
         print('You can only use numbers as ports.')
     else:
       app.run(host='0.0.0.0', port=8000)
+
+if __name__ == '__main__':
+    main()
